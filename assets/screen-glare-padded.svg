@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g id="screen_glare">
+	<defs>
+		<path id="screenclip" d="M454.3,359.9l-64.6,2.3l-90.8,1.1l-90.8-1.1l-64.6-2.3c-11.3,0-20.5-9.2-20.5-20.5l-2.3-60.1l-1.1-72.7
+			l1.1-82.3l2.3-50.5c0-11.3,9.2-20.5,20.5-20.5l64.6-2.3l90.8-1.1l90.8,1.1l64.6,2.3c11.3,0,20.5,9.2,20.5,20.5l2.3,51l1.1,82.3
+			l-1.1,72.1l-2.3,60.1C474.9,350.7,465.7,359.9,454.3,359.9z"/>
+	</defs>
+	<clipPath id="screenclip_00000133497766475799053760000016936437862884634037_">
+		<use xlink:href="#screenclip"  overflow="visible"/>
+	</clipPath>
+	
+		<radialGradient id="glare2_00000112633039922897023210000013189157311613066640_" cx="380.8334" cy="148.0854" r="150.4466" gradientTransform="matrix(1.3808 0 0 1.1481 -137.2703 -35.1924)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</radialGradient>
+	
+		<path id="glare2" display="none" opacity="0.3" clip-path="url(#screenclip_00000133497766475799053760000016936437862884634037_)" fill="url(#glare2_00000112633039922897023210000013189157311613066640_)" d="
+		M605.7,310.8H171.4c-14.3,0-25.8-11.6-25.8-25.8V-15.3c0-14.3,11.6-25.8,25.8-25.8h434.3c14.3,0,25.8,11.6,25.8,25.8V285
+		C631.6,299.2,620,310.8,605.7,310.8z"/>
+	
+		<radialGradient id="glare1_00000094613951124665779350000016964269376397397669_" cx="584.8879" cy="-88.1423" r="173.3162" gradientTransform="matrix(0.6139 0.146 -0.156 0.656 56.4098 67.9591)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.7"/>
+		<stop  offset="4.007548e-02" style="stop-color:#FFFFFF;stop-opacity:0.6719"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</radialGradient>
+	
+		<path id="glare1" display="none" opacity="0.3" clip-path="url(#screenclip_00000133497766475799053760000016936437862884634037_)" fill="url(#glare1_00000094613951124665779350000016964269376397397669_)" d="
+		M500.2,218.7l-189.8-45.1c-7.2-1.7-11.7-9-10-16.2L342-17.6c1.7-7.2,9-11.7,16.2-10L548,17.6c7.2,1.7,11.7,9,10,16.2l-41.6,174.9
+		C514.7,215.9,507.4,220.4,500.2,218.7z"/>
+	
+		<rect x="331" y="219.6" clip-path="url(#screenclip_00000133497766475799053760000016936437862884634037_)" fill="none" width="23.9" height="23.9"/>
+</g>
+<rect id="padding" x="71.8" fill="none" width="454.2" height="600"/>
+</svg>

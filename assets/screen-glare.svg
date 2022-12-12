@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="158" height="138" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 158 138">
+  <defs>
+    <clipPath id="clippath">
+      <path id="screenclip" d="M147.45908,136.5l-28.45907,1-40,.5-40.00001-.5-28.45907-1c-4.99316,0-9.04092-4.04776-9.04092-9.04092L.5,101l-.5-32L.5,32.77895,1.5,10.54092C1.5,5.54776,5.54776,1.5,10.54092,1.5L39,.5l40-.5,40,.5,28.45907,1c4.99316,0,9.04092,4.04776,9.04092,9.04092l1,22.45908,.5,36.25-.5,31.75-1,26.45907c0,4.99316-4.04776,9.04092-9.04092,9.04092Z" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="124.29413" cy="38.56854" fx="124.29413" fy="38.56854" r="66.24964" gradientTransform="translate(-53.11771 -6.91097) scale(1.38078 1.14807)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".08568" stop-color="#f7f7f7" stop-opacity=".96874"/>
+      <stop offset=".21865" stop-color="#e1e1e1" stop-opacity=".88283"/>
+      <stop offset=".38225" stop-color="#bdbdbd" stop-opacity=".7424"/>
+      <stop offset=".57015" stop-color="#8b8b8b" stop-opacity=".54726"/>
+      <stop offset=".77872" stop-color="#4b4b4b" stop-opacity=".29724"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="295.54342" cy="-87.80249" fx="295.54342" fy="-87.80249" r="64.42589" gradientTransform="translate(-50.08866 79.27001) scale(.63098 .67428)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="pc">
+    <g id="screen_glare" data-name="screen glare">
+      <g clip-path="url(#clippath)">
+        <rect id="glare2" x="11.49474" y="-40.12632" width="214.02105" height="154.98947" rx="11.38307" ry="11.38307" fill="url(#radial-gradient)" opacity=".3"/>
+        <rect id="glare1" x="87.49183" y="-25.44675" width="97.80151" height="91.02728" rx="5.941" ry="5.941" transform="translate(8.34419 -31.01369) rotate(13.37821)" fill="url(#radial-gradient-2)" opacity=".3"/>
+      </g>
+    </g>
+  </g>
+</svg>
