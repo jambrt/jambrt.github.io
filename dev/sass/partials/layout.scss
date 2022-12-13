@@ -3,10 +3,26 @@ html, body{
     height: 100%;
 }
 #main{
+    --x: 0px;
+    --y: 0px;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 	background-image: linear-gradient(to right top, #2a2a2a, #2f2f2f, #3e3d3d, #5b5b5b, #8b8b8b);
+    background-image: url("../images/space.jpg");
+    background-size: 100% 100%;
+    background-position: var(--x) var(--y);
+}
+#contentPc{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contentSide{
+    width: 40%;
+    transition: width 0.5s ease;
 }
