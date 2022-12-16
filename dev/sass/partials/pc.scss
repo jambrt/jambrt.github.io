@@ -1,6 +1,25 @@
+#screenGlare{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+}
+#screenClipSVG{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 #pc{
     height: 80%;
     position: relative;
+    @media (max-width: $breakpoint-md) {
+        height: 60%;
+    }
 }
 #pcSvg{
     height: 100%;
@@ -8,7 +27,7 @@
 }
 #pcContent{
     font-family: $font-family-code;
-    font-size: $font-size-rg;
+    font-size: $font-size-md;
     font-weight: $font-weight-sm;
     color: #fff;
     text-shadow: 0 0 5px rgba(#fff, 0.5);
@@ -16,7 +35,7 @@
     top: 8.4%;
     left: 19.9%;
     height: 52.2%;
-    width: 59.7%;
+    width: 59.8%;
     overflow: hidden;
     clip-path: url(#screenClipPath);
     padding: 2% 3%;
@@ -39,19 +58,54 @@
         background-size: 100% 5px;
         animation: scanlines 1.5s steps(60) infinite;
     }
+    @media (max-width: $breakpoint-md){
+        font-size: $font-size-rg;
+        padding: 0 3%;
+    }
 }
-#screenGlare{
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 50%;
-    width: 100%;
-    height: 100%;
+
+.pc__intro{
+    min-height: 70px;
+    // text-align: center;
 }
-#screenClipSVG{
-    position: absolute;
+.pc__intro h1{
+    font-size: $font-size-md;
+}
+
+.pc__menu{
+    margin-top: 40px;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    animation: fadeIn 1s 4s both;
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    li{
+        flex-grow: 1;
+        // width: 50%;
+    }
+    // .btn{
+    //     width: 100%;
+    //     text-align: center;
+    // }
+    @media (max-width: $breakpoint-md){
+        margin-top: 20px;
+        ul{
+            gap: 5px;
+        }
+        li{
+            width: auto;
+        }
+    }
+}
+
+.pc__page h2{
+    margin: 0;
+}
+
+#keyboard{
+    opacity: 0;
 }

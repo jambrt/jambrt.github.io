@@ -8,12 +8,16 @@
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=VT323&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
 
     <link href="css/styles.css" rel="stylesheet">
+    
     <title>Jame</title>
 </head>
-<body>
+<body class="">
     <div id="main">
         <div id="contentPc">
             <div id="pc">
@@ -365,6 +369,14 @@
                     </g>
                 </g>
                 </svg>         
+                <!-- <svg version="1.1" id="pcSvg" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 600 600" xml:space="preserve">
+                    <path fill="#FFF" d="M521 8v584H79V8h442m8-8H71v600h458V0z"/>
+                    <path d="M121.4 50.5h357.3v312.6H121.4z"/>
+                    <path fill="#FFF" d="M474.6 54.5v304.6H125.4V54.5h349.2m8-8H117.4v320.6h365.3V46.5h-.1zM179.4 443h160v8h-160z"/>
+                    <circle fill="#FFF" stroke="#FFF" stroke-width="1.572" stroke-miterlimit="10" cx="142.6" cy="447" r="9"/>
+                  </svg> -->
+                  
+                                
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="screenGlare" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
@@ -399,24 +411,104 @@
                 </g>
                 <rect id="padding" x="71.8" fill="none" width="454.2" height="600"/>
                 </svg>
-                <div id="pcContent">
-                    <svg id="screenClipSVG">
-                        <defs>
-                            <clipPath id="screenClipPath" clipPathUnits="objectBoundingBox">
-                                <path transform="scale(0.0027886, 0.0031908)" d="M334.7,310l-64.6,2.3l-90.8,1.1l-90.8-1.1L23.9,310c-11.3,0-20.5-9.2-20.5-20.5l-2.3-60.1L0,156.7l1.1-82.3l2.3-50.5
+                <svg id="screenClipSVG">
+                    <defs>
+                        <clipPath id="screenClipPath" clipPathUnits="objectBoundingBox">
+                            <path transform="scale(0.0027886, 0.0031908)" d="M334.7,310l-64.6,2.3l-90.8,1.1l-90.8-1.1L23.9,310c-11.3,0-20.5-9.2-20.5-20.5l-2.3-60.1L0,156.7l1.1-82.3l2.3-50.5
             c0-11.3,9.2-20.5,20.5-20.5l64.6-2.3L179.3,0l90.8,1.1l64.6,2.3c11.3,0,20.5,9.2,20.5,20.5l2.3,51l1.1,82.3l-1.1,72.1l-2.3,60.1
             C355.3,300.8,346.1,310,334.7,310z"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <h1 class="typeText">Hello! I am James, a creative front end developer</h1>
+                        </clipPath>
+                    </defs>
+                </svg>                
+                <div id="pcContent">
+                    <div class="pc__slider owl-carousel">
+                        <div class="pc__page" data-nav-location="home">
+                            <div class="pc__home">
+                                <div class="pc__intro">
+                                    <h1>
+                                        <span class="typedText">Hello!</span>
+                                        <span class="typedText" data-type-delay="500">I am James, a creative front end developer.</span>
+                                    </h1>
+                                    <p class="typedText" data-type-delay="2800">Take a look at some of my work:</p>
+                                </div>
+                                <div class="pc__menu">
+                                    <ul>
+                                        <li><button class="btn minimal" data-nav-target="development">> Development</button></li>
+                                        <li><button class="btn minimal" data-nav-target="creative">> Creative</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pc__page" data-nav-location="development">
+                            <h2 class="typedText">Development</h2>
+                            <p class="typedText" data-type-delay="500">Here are some projects I have worked on, including projects built as part of a team.</p>
+                            <button class="btn minimal" data-nav-target="home">< Back</button>
+                        </div>
+                        <div class="pc__page" data-nav-location="creative">
+                            <h2 class="typedText">Creative</h2>
+                            <p class="typedText" data-type-delay="500">Outside of web development I like to keep the creativity flowing.</p>
+                            <p class="typedText" data-type-delay="1000">Here is some of my creative work:</p>
+                            <button class="btn minimal" data-nav-target="home">< Back</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="contentSide">
+            <div class="contentSide__slider owl-carousel">
+                <div class="contentSide__item" data-nav-location="development">
+                    <div id="contentDevelopment">
+                        <div class="contentSide__title">
+                            <h2>Company Projects</h2>
+                        </div>
+                        <div class="contentSide__projects">
+                            <div class="project">
+                                <a href="#" class="project__image">
+                                    <img src="images/sites/ll.svg">
+                                </a>
+                                <div class="project__details">
+                                    <p>
+                                        Role:<br />
+                                        Front end build for new website
+                                    </p>
+                                    <p>
+                                        Tech:<br />
+                                        (HTML/CSS/JS)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="#" class="project__image">
+                                    <img src="images/sites/mi.svg">
+                                </a>
+                                <div class="project__details">
+                                    <p>
+                                        Role:<br />
+                                        Front end build for new website
+                                    </p>
+                                    <p>
+                                        Tech:<br />
+                                        (HTML/CSS/JS)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentSide__item" data-nav-location="creative">
+                    <div class="contentSide__title">
+                        <h2>Photography</h2>
+                    </div>
+                    <div class="contentSide__imageGrid">
+
+                    </div>
+                </div>
+            </div>
             
         </div>
     </div>
-    <script src="dev/js/scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="js/lib/owl.carousel.min.js"></script>
+    <script src="dev/js/scripts.js"></script>
 </body>
 </html>

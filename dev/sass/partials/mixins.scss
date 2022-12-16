@@ -1,0 +1,6 @@
+@mixin textGlow{
+    text-shadow: 0 0 5px rgba(#fff, 0.5);
+}
+@mixin boxGlow{
+    box-shadow: 0 0 5px rgba(#fff, 0.5);
+}

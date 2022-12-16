@@ -1,0 +1,29 @@
+[class*="btn"]{
+    background: none;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    font-size: $font-size-md;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 0.15s;
+    cursor: pointer;
+    @include textGlow;
+    @include boxGlow;
+
+    &.minimal{
+        padding: 4px 10px;
+        border: none;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    @media (max-width: $breakpoint-md){
+        font-size: $font-size-md;
+    }
+}
+[class*="btn"]:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.15s;
+}

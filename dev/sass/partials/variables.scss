@@ -2,12 +2,29 @@
 $green-code: #33ff00;
 
 // fonts
-$font-family-code: 'VT323', monospace;
+$font-family-code: 'IBM Plex Mono','VT323', monospace;
 
 $font-size-sm: 1.2rem;
 $font-size-rg: 1.6rem;
+$font-size-md: 2.0rem;
+$font-size-lg: 3.0rem;
+$font-size-xl: 4.0rem;
 
 $font-weight-sm: 200;
 
 // z-indexes
 $z-screen: 2;
+
+// Screen sizes
+$screen-sm:   576px;
+$screen-md:   768px;
+$screen-lg:   992px;
+$screen-xl:   1200px;
+$screen-xxl:  1400px;
+
+// Breakpoints
+$breakpoint-sm:   575px;
+$breakpoint-md:   767px;
+$breakpoint-lg:   991px;
+$breakpoint-xl:   1199px;
+$breakpoint-xxl:  1399px;
