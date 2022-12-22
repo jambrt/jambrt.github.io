@@ -18,7 +18,7 @@ typedElements.forEach(el => {
 function typeText(element){
     var i = 0;
     var txt = element.innerHTML;
-    var speed = 40;
+    var speed = 20;
     var delay = 0;
     var delay = element.dataset.typeDelay;
     
@@ -50,7 +50,7 @@ function changePcScreen(target){
     var allSlides   = Array.prototype.slice.call(document.querySelectorAll("#pcContent .owl-item"));
     var slideNumber = allSlides.indexOf(navLocation.parentNode);
 
-    $(".pc__slider").trigger('to.owl.carousel', [slideNumber, 0]);
+    $(".pc__slider").trigger('to.owl.carousel', [slideNumber, 500]);
 
 }
 
@@ -82,20 +82,21 @@ backButtons.forEach(el => {
 $(document).ready(function(){
     $(".pc__slider").owlCarousel({
         items: 1,
-        // mouseDrag: false,
-        // touchDrag: false,
-        // pullDrag: false,
-        // freeDrag: false,
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false,
+        freeDrag: false,
         margin: 5,
         animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
     });
     $(".contentSide__slider").owlCarousel({
         items: 1,
-        // mouseDrag: false,
-        // touchDrag: false,
-        // pullDrag: false,
-        // freeDrag: false,
+        autoHeight: true,
+        autoHeightClass: '',
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false,
+        freeDrag: false,
     });
 });
 // $(".pc__slider").on('change.owl.carousel', function(e){

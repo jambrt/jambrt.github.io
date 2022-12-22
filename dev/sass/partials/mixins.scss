@@ -4,3 +4,18 @@
 @mixin boxGlow{
     box-shadow: 0 0 5px rgba(#fff, 0.5);
 }
+
+@mixin dropPink{
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 5px;
+        left: 5px;
+        background-color: $pink;
+        z-index: -1;
+    }
+}

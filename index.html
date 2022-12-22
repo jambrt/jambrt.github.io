@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +29,9 @@
                     <path fill="#DBC9B6" d="M526,11v523.5c0,6.1-5.4,11-12,11H83.8c-6.6,0-12-4.9-12-11V11c0-6.1,5.4-11,12-11H514
                         C520.6,0,526,4.9,526,11z"/>
                 </g>
-                <linearGradient id="body_shadow_00000059299387003465172060000017994364539364667825_" gradientUnits="userSpaceOnUse" x1="298.8645" y1="514.9319" x2="298.8645" y2="545.4953">
-                    <stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-                    <stop  offset="0.5307" style="stop-color:#000000;stop-opacity:0.2"/>
+                <linearGradient id="body_shadow_00000059299387003465172060000017994364539364667825_" gradientUnits="userSpaceOnUse" x1="298.8645" x2="298.8645" y2="545.4953" y1="504.9319">
+                    <stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0"></stop>
+                    <stop style="stop-color:#000000;stop-opacity:0.2" offset="0.7307"></stop>
                 </linearGradient>
                 <rect id="body_shadow" x="71.8" y="514.9" fill="url(#body_shadow_00000059299387003465172060000017994364539364667825_)" width="454.2" height="30.6"/>
                 <g id="body_lighting">
@@ -429,26 +430,26 @@
                                         <span class="typedText">Hello!</span>
                                         <span class="typedText" data-type-delay="500">I am James, a creative front end developer.</span>
                                     </h1>
-                                    <p class="typedText" data-type-delay="2800">Take a look at some of my work:</p>
+                                    <p class="typedText" data-type-delay="2000">Take a look at some of my work:</p>
                                 </div>
                                 <div class="pc__menu">
                                     <ul>
-                                        <li><button class="btn minimal" data-nav-target="development">> Development</button></li>
-                                        <li><button class="btn minimal" data-nav-target="creative">> Creative</button></li>
+                                        <li><button class="btn minimal" data-nav-target="development">Development</button></li>
+                                        <li><button class="btn minimal" data-nav-target="creative">Creative</button></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="pc__page" data-nav-location="development">
-                            <h2 class="typedText">Development</h2>
-                            <p class="typedText" data-type-delay="500">Here are some projects I have worked on, including projects built as part of a team.</p>
-                            <button class="btn minimal" data-nav-target="home">< Back</button>
+                            <h2 class="">Development</h2>
+                            <p class="" data-type-delay="500">Here are some recent projects I have worked on, including projects built as part of a team.</p>
+                            <button class="btn minimal back" data-nav-target="home">Back</button>
                         </div>
                         <div class="pc__page" data-nav-location="creative">
-                            <h2 class="typedText">Creative</h2>
-                            <p class="typedText" data-type-delay="500">Outside of web development I like to keep the creativity flowing.</p>
-                            <p class="typedText" data-type-delay="1000">Here is some of my creative work:</p>
-                            <button class="btn minimal" data-nav-target="home">< Back</button>
+                            <h2 class="">Creative</h2>
+                            <p class="" data-type-delay="500">Outside of web development I like to keep the creativity flowing.</p>
+                            <p class="" data-type-delay="1000">Here is some of my creative work:</p>
+                            <button class="btn minimal back" data-nav-target="home">Back</button>
                         </div>
                     </div>
                 </div>
@@ -461,35 +462,37 @@
                         <div class="contentSide__title">
                             <h2>Company Projects</h2>
                         </div>
-                        <div class="contentSide__projects">
-                            <div class="project">
-                                <a href="#" class="project__image">
-                                    <img src="images/sites/ll.svg">
-                                </a>
-                                <div class="project__details">
-                                    <p>
-                                        Role:<br />
-                                        Front end build for new website
-                                    </p>
-                                    <p>
-                                        Tech:<br />
-                                        (HTML/CSS/JS)
-                                    </p>
+                        <div class="contentSide__body">
+                            <div class="contentSide__projects">
+                                <div class="project">
+                                    <a href="https://www.lifelites.org/" target="_blank" class="project__image">
+                                        <img src="images/sites/ll.svg">
+                                    </a>
+                                    <div class="project__details">
+                                        <p>
+                                            Role:<br />
+                                            Build a new front end with highly customisable text and image components
+                                        </p>
+                                        <p>
+                                            Tech:<br />
+                                            (HTML/CSS/JS)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <a href="#" class="project__image">
-                                    <img src="images/sites/mi.svg">
-                                </a>
-                                <div class="project__details">
-                                    <p>
-                                        Role:<br />
-                                        Front end build for new website
-                                    </p>
-                                    <p>
-                                        Tech:<br />
-                                        (HTML/CSS/JS)
-                                    </p>
+                                <div class="project">
+                                    <a href="https://www.militaryinjury.co.uk/" target="_blank" class="project__image">
+                                        <img src="images/sites/mi.svg">
+                                    </a>
+                                    <div class="project__details">
+                                        <p>
+                                            Role:<br />
+                                            Build the front end for a newly redesigned website
+                                        </p>
+                                        <p>
+                                            Tech:<br />
+                                            (HTML/CSS/JS)
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -499,8 +502,18 @@
                     <div class="contentSide__title">
                         <h2>Photography</h2>
                     </div>
-                    <div class="contentSide__imageGrid">
-
+                    <div class="contentSide__body">
+                        <div class="contentSide__imageGrid">
+                            <div class="imageGrid__item">
+                                <img src="images/photography/001.jpg">
+                            </div>
+                            <div class="imageGrid__item">
+                                <img src="images/photography/001.jpg">
+                            </div>
+                            <div class="imageGrid__item">
+                                <img src="https://placebear.com/300/500">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

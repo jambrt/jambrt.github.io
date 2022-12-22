@@ -33,29 +33,10 @@
     justify-content: center;
     transition: width 0.5s ease;
 }
-.sideActive{
-    #contentPc{
-        width: 60%;
-        transition: width 0.5s ease;
-    }
-}
-
-#contentSide{
-    position: relative;
-    width: 40%;
+.sideActive #contentPc{
+    width: 60%;
     transition: width 0.5s ease;
-    animation: fadeOut 0.25s ease both;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.sideActive{
-    #contentSide{
-        // width: 40%;
-        transition: width 0.5s ease;
-        animation: fadeIn 0.5s ease 0.5s both;
+    @media (max-width: $breakpoint-xl) {
+        width: 50%;
     }
 }

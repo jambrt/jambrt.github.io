@@ -8,14 +8,28 @@
     border: 2px solid #fff;
     transition: 0.15s;
     cursor: pointer;
+    position: relative;
     @include textGlow;
     @include boxGlow;
 
     &.minimal{
-        padding: 4px 10px;
+        padding: 4px 10px 4px 30px;
         border: none;
         text-align: left;
         box-shadow: none;
+        &::before{
+            content: ">";
+            display: block;
+            height: 31px;
+            width: 31px;
+            top: 0;
+            left: 10px;
+            position: absolute;
+            line-height: 28px;
+        }
+        &.back::before{
+            content: '<';
+        }
     }
 
     @media (max-width: $breakpoint-md){

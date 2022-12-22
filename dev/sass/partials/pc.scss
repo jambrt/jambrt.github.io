@@ -17,6 +17,7 @@
 #pc{
     height: 80%;
     position: relative;
+    min-height: 650px;
     @media (max-width: $breakpoint-md) {
         height: 60%;
     }
@@ -75,7 +76,7 @@
 .pc__menu{
     margin-top: 40px;
     width: 100%;
-    animation: fadeIn 1s 4s both;
+    animation: fadeIn 1s 3s both;
     ul{
         display: flex;
         flex-direction: column;
