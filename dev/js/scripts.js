@@ -88,6 +88,14 @@ $(document).ready(function(){
         freeDrag: false,
         margin: 5,
         animateIn: 'fadeIn',
+        // responsive:{
+        //     0:{
+        //         autoHeight: true,
+        //     },
+        //     992:{
+        //         autoHeight: false,
+        //     }
+        // }
     });
     $(".contentSide__slider").owlCarousel({
         items: 1,

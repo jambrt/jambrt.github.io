@@ -6,16 +6,20 @@
 }
 
 @mixin dropPink{
-    position: relative;
-    &::before{
-        content: '';
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 5px;
-        left: 5px;
-        background-color: $pink;
-        z-index: -1;
-    }
+    // position: relative;
+    // &::before{
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     top: 5px;
+    //     left: 5px;
+    //     background-color: $pink;
+    //     z-index: -1;
+    // }
+    box-shadow: 5px 5px 0px $pink;
+}
+@mixin dropShadow{
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
 }

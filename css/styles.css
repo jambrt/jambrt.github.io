@@ -354,6 +354,12 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  margin: 0.67em 0;
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 #main {
@@ -382,6 +388,12 @@ h2 {
 #main.moved::before {
   animation: fadeOut 1s both;
 }
+@media (max-width: 991px) {
+  #main {
+    display: block;
+    height: auto;
+  }
+}
 
 #contentPc {
   height: 100%;
@@ -391,6 +403,11 @@ h2 {
   justify-content: center;
   transition: width 0.5s ease;
 }
+@media (max-width: 991px) {
+  #contentPc {
+    height: auto;
+  }
+}
 
 .sideActive #contentPc {
   width: 60%;
@@ -399,6 +416,11 @@ h2 {
 @media (max-width: 1199px) {
   .sideActive #contentPc {
     width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .sideActive #contentPc {
+    width: 100%;
   }
 }
 
@@ -537,15 +559,23 @@ h2 {
   position: relative;
   min-height: 650px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #pc {
-    height: 60%;
+    height: auto;
+    width: 100%;
+    min-height: 0;
+    padding: 20px;
   }
 }
 
 #pcSvg {
   height: 100%;
   min-width: 100%;
+}
+@media (max-width: 991px) {
+  #pcSvg {
+    display: none;
+  }
 }
 
 #pcContent {
@@ -579,10 +609,20 @@ h2 {
   background-size: 100% 5px;
   animation: scanlines 1.5s steps(60) infinite;
 }
+@media (max-width: 991px) {
+  #pcContent {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 320px;
+    padding: 20px;
+    background: #000;
+  }
+}
 @media (max-width: 767px) {
   #pcContent {
     font-size: 1.6rem;
-    padding: 0 3%;
   }
 }
 
@@ -636,6 +676,11 @@ h2 {
   margin-bottom: 20px;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .project {
+    flex-wrap: wrap;
+  }
+}
 
 .project__image {
   display: block;
@@ -645,7 +690,7 @@ h2 {
   padding: 15px;
   transition: 0.25s;
   flex-shrink: 0;
-  position: relative;
+  box-shadow: 5px 5px 0px #CA054D;
 }
 .project__image img {
   width: 100%;
@@ -662,17 +707,6 @@ h2 {
   filter: brightness(1) invert(0);
   transition: filter 0.25s;
 }
-.project__image::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 5px;
-  left: 5px;
-  background-color: #CA054D;
-  z-index: -1;
-}
 
 .project__details {
   padding: 15px 30px;
@@ -686,18 +720,7 @@ h2 {
   background-color: #000;
   display: inline-block;
   padding: 5px 10px;
-  position: relative;
-}
-.project__details p::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 5px;
-  left: 5px;
-  background-color: #CA054D;
-  z-index: -1;
+  box-shadow: 5px 5px 0px #CA054D;
 }
 @media (max-width: 1399px) {
   .project__details p {
@@ -725,6 +748,13 @@ h2 {
     width: 50%;
   }
 }
+@media (max-width: 991px) {
+  #contentSide {
+    width: 100%;
+    position: relative;
+    padding: 40px 20px 20px;
+  }
+}
 
 .sideActive #contentSide {
   opacity: 1;
@@ -736,18 +766,7 @@ h2 {
   background-color: #000;
   padding: 5px 10px;
   margin: 0;
-  position: relative;
-}
-.contentSide__title h2::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 5px;
-  left: 5px;
-  background-color: #CA054D;
-  z-index: -1;
+  box-shadow: 5px 5px 0px #CA054D;
 }
 
 .contentSide__title {

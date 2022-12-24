@@ -4,6 +4,9 @@
     gap: 20px;
     margin-bottom: 20px;
     align-items: center;
+    @media (max-width: $breakpoint-lg){
+        flex-wrap: wrap;
+    }
 }
 .project__image{
     display: block;

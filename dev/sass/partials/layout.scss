@@ -10,6 +10,7 @@
     background-image: url("../images/space.jpg");
     background-size: 120% 120%;
     background-position: var(--x) var(--y);
+    // background: $beige;
     &::before{
         content: '';
         display: block;
@@ -23,7 +24,10 @@
     &.moved::before{
         animation: fadeOut 1s both;
     }
-
+    @media (max-width: $breakpoint-lg){
+        display: block;
+        height: auto;
+    }
 }
 #contentPc{
     height: 100%;
@@ -32,11 +36,17 @@
     align-items: center;
     justify-content: center;
     transition: width 0.5s ease;
+    @media (max-width: $breakpoint-lg){
+        height: auto;   
+    }
 }
 .sideActive #contentPc{
     width: 60%;
     transition: width 0.5s ease;
     @media (max-width: $breakpoint-xl) {
         width: 50%;
+    }
+    @media (max-width: $breakpoint-lg){
+        width: 100%;
     }
 }
